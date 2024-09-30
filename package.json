@@ -1,0 +1,28 @@
+{
+  "name": "pvm",
+  "version": "1.0.0",
+  "description": "PHP Version Manager for Linux",
+  "main": "bin/pvm.js",
+  "scripts": {
+    "start": "node bin/pvm.js",
+    "build": "pkg --targets node14-linux-x64 .",
+    "set-path": "sudo mv pvm /usr/local/bin/pvm"
+  },
+  "bin": {
+    "pvm": "bin/pvm.js"
+  },
+  "pkg": {
+    "assets": [
+      "themes/*",
+      "commands/*"
+    ],
+    "targets": [
+      "node14-linux-x64"
+    ]
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^8.0.0",
+    "shelljs": "^0.8.4"
+  }
+}
