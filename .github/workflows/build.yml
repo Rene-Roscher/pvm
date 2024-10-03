@@ -31,4 +31,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: pvm-build
-          path: ./pvm-linux-x64
+          path: ./pvm
